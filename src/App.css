@@ -1,33 +1,254 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 .App {
   text-align: center;
+  min-height: 1000px;
+  height:100%;
+  background: linear-gradient(#ffcc99, #993366);
+  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  height: 130px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  background-color: #ff9966;
+  border-top: 10px solid #ffcc99;
+}
+.header i {
+  font-size: 3rem;
+  color: #ffcc99;
+}
+
+.icon {
+  width: 300px;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.icon h1 {
+  margin-left: 7%;
+  padding-bottom: 5%;
+  color: #cc6666;
+}
+.heading {
+  font-family: "Patua One", cursive;
+}
+.text {
+  font-family: "Roboto", sans-serif;
+}
+
+.item {
+  background-color: #993366 !important;
+}
+form {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top:3%;
+
+  /* align-items: center; */
+}
+input {
+  padding: 3%;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.dateF {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.nameF {
+  width: 100%;
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.descriptionF {
+  width: 100%;
+  height: 100px;
+}
+.addressF {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+form button {
+  margin-top: 5%;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ff9966;
+  padding: 10px;
+  /* margin-bottom: 100vh; */
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+form button:hover {
+  background: #993366;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+
+
+.singUpForm {
+  /* border: solid 2px red; */
+  width: 60%;
+  align-self: auto;
+  padding: 2rem;
+  margin: auto;
+  height: 200px;
+}
+
+.startF {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.endF {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.signup {
+  
+  font-size: 3rem;
+  padding-top:8%;
+  color:#993366;
+}
+
+
+.eventcard{
+  border-radius:10px;
+  border: 5px solid #474440;
+  padding: 3% 2%;
+  margin:5%;
+  width: 40%;
+  
+  background-color: rgba(204, 102, 102, 0.5);
+  -webkit-box-shadow: inset 5px 10px 30px #993366;
+  /* box-shadow:3px 3px 5px 6px #ccc;  */
+}
+.eventcard:hover{
+  -webkit-box-shadow: 3px 3px 5px 6px #993366;
+  background-color: #ffcc9965;
+  transition: .6s;
+}
+
+.myevents{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.eventbutton{
+margin-left:2%;
+margin-right:2%;
+
+background-color:transparent;
+padding: 2% 5%;
+border:4px solid #ff9966;
+}
+.eventbutton:hover{
+  -webkit-box-shadow: 1px 1px 2px 3px #993366;
+  background-color:#ff9966;
+  color:white;
+  padding: 3% 6%;
+  transition: .6s;
   }
-  to {
-    transform: rotate(360deg);
+  .eventbutton:active{
+    border:none;
+    }
+
+  .wrapper{
+    height: 100vh;
   }
+
+  button .buttonf{
+    margin-top:0;
+  }
+
+  .navlink{
+    width: 300%;
+    background-color: #993366;
+    color:#ffcc99;
+    padding: 1% 5%;
+    font-size:1.2rem;
+    font-weight: 700;
+    -webkit-box-shadow: 4px 1px 4px 3px #cc6666;
+    transition: .6s;
+  }
+  .navlink:hover{
+    -webkit-box-shadow: 4px 1px 4px 3px #993366;
+    color:#993366;
+    background-color: #ffcc99;
+    transition: .6s;
+    
+  }
+  
+.titleH{
+  padding-top:1%;
+  color:#993366;
+}
+  .navflex{
+    
+    display:flex;
+  }
+  .buttondown{
+    margin-bottom:200px;
+
+  }
+
+  .mainevent{
+  border-radius:10px;
+  border: 5px solid #474440;
+  padding: 3% 2%;
+  margin:10% auto;
+  width: 60%;
+  
+  background-color: rgba(204, 102, 102, 0.5);
+  -webkit-box-shadow: inset 5px 10px 30px #993366;
+  
+  }
+
+  .mainevent:hover{
+  -webkit-box-shadow: 3px 3px 5px 6px #993366;
+  background-color: #ffcc9965;
+  transition: .6s;
+  }
+
+  .headermain{
+    font-size:3rem;
+    font-weight:700;
+    color:#993366;
+  }
+  .textmain{
+    font-size: 1.4rem;
+    color:white;
+  }
+  .titlemain{
+    color:#803e3e;
+    font-size: 1.3rem;
+    font-weight:600;
+  }
+ .maindes{
+   font-size: 1.6rem;
+   padding-top: 40px;
+   padding-bottom:40px;
+   color:#5c1e3d;
+ }
+
+.buttonD{
+  margin-bottom:20%;
 }
